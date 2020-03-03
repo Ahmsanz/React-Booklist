@@ -10,7 +10,7 @@ export const bookReducer = (state, action) => {
             }]
             
         case 'REMOVE_BOOK':
-            return state.filter(book => book.id !== id)
+            return state.filter(book => book.id !== action.id)
     
         default:
             return state;
